@@ -1,0 +1,9 @@
+.operation {
+  margin-bottom: 50px;
+  h2 {
+    padding: 20px;
+    @include desktop {
+      text-align: center;
+    }
+  }
+}

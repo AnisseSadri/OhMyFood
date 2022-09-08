@@ -1,0 +1,81 @@
+.card {
+  @include card;
+  @include tablet {
+    width: 40%;
+  }
+  img {
+    @include card-img;
+  }
+  figure {
+    @include card-figure;
+  }
+  figcaption {
+    @include card-figcaption;
+    p {
+      font-family: "Roboto";
+      text-align: left;
+    }
+  }
+}
+
+.main__restaurant {
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+  @include desktop {
+    padding: 0 20%;
+  }
+}
+
+.heart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h4 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  span {
+    :hover {
+      background-color: $linear-gradient;
+    }
+  }
+}
+
+.new {
+  @include btn-card;
+}
+
+.fill {
+  color: black;
+  cursor: pointer;
+  &:hover {
+    animation: fill 0.3s ease-in-out;
+    display: inline-block;
+    opacity: 1;
+    background: linear-gradient(
+      to left,
+      #9356dc,
+      #b35cdc,
+      #cf64dc,
+      #e86edb,
+      #ff79da
+    );
+    background: -webkit-linear-gradient(
+      to left,
+      #9356dc,
+      #b35cdc,
+      #cf64dc,
+      #e86edb,
+      #ff79da
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,53 @@
+.loader {
+  &__food {
+    vertical-align: middle;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    @include tablet {
+      top: 40%;
+      left: 39%;
+    }
+    @include desktop {
+      top: 40%;
+      left: 44%;
+    }
+    span {
+      display: inline-block;
+      width: 5px;
+      height: 20px;
+      padding-right: 1em;
+      &:nth-child(1) {
+        animation: grow 1s ease-in-out infinite;
+      }
+      &:nth-child(2) {
+        animation: grow 1s ease-in-out 0.15s infinite;
+      }
+      &:nth-child(3) {
+        animation: grow 1s ease-in-out 0.15s infinite;
+      }
+      &:nth-child(4) {
+        animation: grow 1s ease-in-out 0.15s infinite;
+      }
+      &:nth-child(5) {
+        animation: grow 1s ease-in-out 0.15s infinite;
+      }
+      &:nth-child(6) {
+        animation: grow 1s ease-in-out 0.15s infinite;
+      }
+      &:nth-child(7) {
+        animation: grow 1s ease-in-out 0.15s infinite;
+      }
+      &:nth-child(8) {
+        animation: grow 1s ease-in-out 0.15s infinite;
+      }
+    }
+  }
+  &__fork {
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: rotate 1s linear infinite;
+  }
+}
