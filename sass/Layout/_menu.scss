@@ -1,0 +1,31 @@
+.main__menu {
+  @include main-menu;
+}
+.full__menu {
+  @include desktop {
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.header__img {
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+  }
+}
+.menu__header {
+  @include menu-header;
+}
+.arrow {
+  position: absolute;
+  left: 20px;
+}
+.menu__title {
+  @include menu-title;
+  @include desktop {
+    padding: 10px 90px;
+  }
+}
