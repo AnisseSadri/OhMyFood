@@ -177,12 +177,6 @@ footer {
   justify-content: space-around;
   align-items: center;
 }
-
-.arrow {
-  position: absolute;
-  left: 20px;
-}
-
 .menu__title {
   font-family: Shrikhand, sans-serif;
   display: flex;
@@ -194,6 +188,11 @@ footer {
   .menu__title {
     padding: 10px 90px;
   }
+}
+
+.arrow {
+  position: absolute;
+  left: 20px;
 }
 
 body {
@@ -612,6 +611,10 @@ footer .fa-hands-helping {
   margin-bottom: 5px;
 }
 
+.btn__order {
+  display: flex;
+  justify-content: center;
+}
 .btn__order button {
   background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   border: 1px solid transparent;
@@ -634,11 +637,6 @@ footer .fa-hands-helping {
   background-color: #ae80e5;
   background-blend-mode: lighten;
   box-shadow: 4px 4px 6px #000;
-}
-
-.btn__order {
-  display: flex;
-  justify-content: center;
 }
 
 @font-face {

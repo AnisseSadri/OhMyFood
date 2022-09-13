@@ -16,16 +16,19 @@
     height: 250px;
   }
 }
-.menu__header {
-  @include menu-header;
+.menu {
+  &__header {
+    @include menu-header;
+  }
+  &__title {
+    @include menu-title;
+    @include desktop {
+      padding: 10px 90px;
+    }
+  }
 }
+
 .arrow {
   position: absolute;
   left: 20px;
-}
-.menu__title {
-  @include menu-title;
-  @include desktop {
-    padding: 10px 90px;
-  }
 }
