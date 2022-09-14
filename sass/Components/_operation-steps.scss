@@ -1,5 +1,6 @@
 .operation__steps {
   list-style-type: none;
+  padding-left: 0px;
   @include tablet {
     flex-wrap: wrap;
     display: flex;
@@ -14,7 +15,7 @@
     align-items: center;
     flex-wrap: nowrap;
     padding: 25px;
-    margin: 15px 20px 15px 30px;
+    margin: 15px 20px 15px 20px;
     border-radius: 20px;
     box-shadow: 1px 2px 8px 2px #c4c4c4;
     background-color: #f5f5f5;

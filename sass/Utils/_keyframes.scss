@@ -39,3 +39,15 @@
     opacity: 1;
   }
 }
+
+@keyframes flash {
+  0% {
+    translate: -9999px;
+  }
+  50% {
+    translate: 500px;
+  }
+  100% {
+    translate: 0px;
+  }
+}
