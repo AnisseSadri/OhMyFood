@@ -1,17 +1,9 @@
 @import "./Utils/variables", "./Utils/mixins", "./Utils/maps",
   "./Utils/keyframes", "./Layout/operation";
+@import "./Base/typography";
 @import "./Layout/header", "./Layout/apropos", "./Layout/loader",
   "./Layout/maps", "./Layout/restaurant", "./Layout/footer", "./Layout/menu";
-@import "./Base/typography";
 @import "./Components/maps-search", "./Components/about",
   "./Components/restaurant-card", "./Components/loader-span",
   "./Components/operation-steps", "./Components/footer-details",
   "./Components/meals";
-@font-face {
-  font-family: "Shrikhand";
-  src: url(Shrikhand/Shrikhand-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Roboto";
-  src: url(Roboto/Roboto-Regular.ttf) format("truetype");
-}

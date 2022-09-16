@@ -61,39 +61,43 @@
 @-webkit-keyframes fadein {
   from {
     opacity: 0;
+    transform: translateY(5px);
   }
   to {
     opacity: 1;
+    transform: translateY(0px);
   }
 }
 @keyframes fadein {
   from {
     opacity: 0;
+    transform: translateY(5px);
   }
   to {
     opacity: 1;
+    transform: translateY(0px);
   }
 }
 @-webkit-keyframes flash {
   0% {
-    translate: -9999px;
+    transform: translate(-9999px);
   }
   50% {
-    translate: 500px;
+    transform: translate(500px);
   }
   100% {
-    translate: 0px;
+    transform: translate(0px);
   }
 }
 @keyframes flash {
   0% {
-    translate: -9999px;
+    transform: translate(-9999px);
   }
   50% {
-    translate: 500px;
+    transform: translate(500px);
   }
   100% {
-    translate: 0px;
+    transform: translate(0px);
   }
 }
 .operation {
@@ -102,12 +106,91 @@
 .operation h2 {
   padding: 20px;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1100px) {
   .operation h2 {
     text-align: center;
   }
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 1100px) {
+  body {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    text-align: center;
+  }
+}
+
+main {
+  background-color: #f6f6f6;
+}
+
+.main {
+  max-width: 1500px;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 1100px) {
+  .main {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main {
+    text-align: center;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style-type: none;
+}
+
+h2 {
+  margin: 0;
+}
+
+h6 {
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  h4 {
+    text-align: left;
+  }
+}
+
+h1,
+h6 {
+  font-family: "Shrikhand", "Roboto", sans-serif;
+}
+
+@font-face {
+  font-family: "Shrikhand";
+  src: url(afont/Shrikhand/Shrikhand-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url() format("truetype");
+}
 header img {
   text-align: center;
   font-weight: bolder;
@@ -150,6 +233,7 @@ header img {
 
 .restaurant {
   background: #f2f2f2;
+  padding-bottom: 50px;
 }
 @media screen and (min-width: 768px) {
   .restaurant__title {
@@ -157,7 +241,7 @@ header img {
   }
 }
 .restaurant__title h3 {
-  padding: 30px 0px 0px 10px;
+  padding: 50px 0px 0px 10px;
 }
 @media screen and (min-width: 768px) {
   .restaurant__title h3 {
@@ -180,7 +264,7 @@ footer {
   margin-top: -50px;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1100px) {
   .full__menu {
     text-align: left;
     display: flex;
@@ -201,13 +285,13 @@ footer {
   align-items: center;
 }
 .menu__title {
-  font-family: Shrikhand, sans-serif;
+  font-family: "Shrikhand", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1100px) {
   .menu__title {
     padding: 10px 90px;
   }
@@ -216,47 +300,6 @@ footer {
 .arrow {
   position: absolute;
   left: 20px;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  font-size: 1rem;
-  font-family: "Roboto", sans-serif;
-  box-sizing: border-box;
-}
-@media screen and (min-width: 1280px) {
-  body {
-    text-align: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  body {
-    text-align: center;
-  }
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-li {
-  list-style-type: none;
-}
-
-h2 {
-  margin: 0;
-}
-
-h6 {
-  margin: 0;
-}
-
-h1,
-h6 {
-  font-family: "Shrikhand", "Roboto", sans-serif;
 }
 
 .maps__search input {
@@ -269,18 +312,21 @@ h6 {
   width: 150px;
 }
 
+.about {
+  margin-bottom: 20px;
+}
 .about h2 {
-  font-weight: bold;
+  font-weight: bolder;
 }
 .about p {
   color: #4d4d4d;
 }
 
 .btn__about button {
-  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: linear-gradient(290deg, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   border: 1px solid transparent;
   border-radius: 30px;
-  padding: 10px 5px;
+  padding: 15px 25px;
   color: #fff;
   font-weight: bold;
   box-shadow: 4px 4px 6px #aaa;
@@ -328,17 +374,18 @@ h6 {
 .main__restaurant {
   display: flex;
   flex-direction: column;
+  margin: 10px;
 }
 @media screen and (min-width: 768px) {
   .main__restaurant {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-flow: row wrap;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1100px) {
   .main__restaurant {
-    padding: 0 20%;
+    padding: 0;
   }
 }
 
@@ -352,7 +399,7 @@ h6 {
   font-size: 1.5rem;
 }
 .heart span :hover {
-  background-color: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: linear-gradient(290deg, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
 }
 
 .new {
@@ -394,10 +441,10 @@ h6 {
     left: 39%;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1100px) {
   .loader__food {
     top: 40%;
-    left: 42%;
+    left: 45%;
   }
 }
 .loader__food span {
@@ -450,6 +497,7 @@ h6 {
 .operation__steps {
   list-style-type: none;
   padding-left: 0px;
+  margin: 10px;
 }
 @media screen and (min-width: 768px) {
   .operation__steps {
@@ -467,7 +515,7 @@ h6 {
   align-items: center;
   flex-wrap: nowrap;
   padding: 25px;
-  margin: 15px 20px 15px 20px;
+  margin: 15px 20px 30px 20px;
   border-radius: 20px;
   box-shadow: 1px 2px 8px 2px #c4c4c4;
   background-color: #f5f5f5;
@@ -519,34 +567,62 @@ footer .fa-hands-helping {
   margin-right: 5px;
 }
 
-.starter {
-  -webkit-animation: fadein 3s ease-in-out;
-          animation: fadein 3s ease-in-out;
-}
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1100px) {
   .starter {
     width: 400px;
   }
 }
-
-.dish {
-  -webkit-animation: fadein 6s ease-in-out;
-          animation: fadein 6s ease-in-out;
+.starter__1 {
+  -webkit-animation: fadein 200ms;
+          animation: fadein 200ms;
 }
-@media screen and (min-width: 1280px) {
+.starter__2 {
+  -webkit-animation: fadein 1200ms;
+          animation: fadein 1200ms;
+}
+.starter__3 {
+  -webkit-animation: fadein 2200ms;
+          animation: fadein 2200ms;
+}
+.starter__4 {
+  -webkit-animation: fadein 2700ms;
+          animation: fadein 2700ms;
+}
+
+@media screen and (min-width: 1100px) {
   .dish {
     width: 400px;
   }
 }
-
-.dessert {
-  -webkit-animation: fadein 9s ease-in-out;
-          animation: fadein 9s ease-in-out;
+.dish__1 {
+  -webkit-animation: fadein 3200ms;
+          animation: fadein 3200ms;
 }
-@media screen and (min-width: 1280px) {
+.dish__2 {
+  -webkit-animation: fadein 4200ms;
+          animation: fadein 4200ms;
+}
+.dish__3 {
+  -webkit-animation: fadein 5200ms;
+          animation: fadein 5200ms;
+}
+
+@media screen and (min-width: 1100px) {
   .dessert {
     width: 400px;
   }
+}
+.dessert__1 {
+  -webkit-animation: fadein 6200ms;
+          animation: fadein 6200ms;
+}
+.dessert__2 {
+  -webkit-animation: fadein 7200ms;
+          animation: fadein 7200ms;
+}
+.dessert__3 {
+  -webkit-animation: fadein 8200ms;
+          animation: fadein 8200ms;
 }
 
 .cross {
@@ -555,14 +631,13 @@ footer .fa-hands-helping {
   align-items: center;
   background-color: #99e2d0;
   width: 20px;
-  height: 30px;
+  height: 23px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   position: absolute;
   padding: 20px;
-  right: -50px;
+  right: -60px;
   top: 0;
-  opacity: 0;
   transition: transform 330ms ease-in-out;
 }
 .cross .fa-check-circle {
@@ -593,6 +668,7 @@ footer .fa-hands-helping {
   padding-right: 75px;
 }
 .meals:hover .cross {
+  right: -50px;
   opacity: 1;
   transform: translate(-50px);
 }
@@ -606,24 +682,24 @@ footer .fa-hands-helping {
   align-items: center;
   line-height: 1.5em;
 }
-
 .last__line p {
   margin: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1100px) {
   .last__line p {
     padding-right: 20px;
   }
 }
-
 .last__line span {
   margin-right: 5px;
 }
 
 .meals h4 {
+  text-overflow: ellipsis;
+  overflow: hidden;
   margin: 0;
 }
 
@@ -640,10 +716,10 @@ footer .fa-hands-helping {
   justify-content: center;
 }
 .btn__order button {
-  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: linear-gradient(290deg, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   border: 1px solid transparent;
   border-radius: 30px;
-  padding: 10px 5px;
+  padding: 15px 25px;
   color: #fff;
   font-weight: bold;
   box-shadow: 4px 4px 6px #aaa;
@@ -652,7 +728,7 @@ footer .fa-hands-helping {
   padding: 20px;
   width: 50%;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1100px) {
   .btn__order button {
     width: 25%;
   }
@@ -661,13 +737,4 @@ footer .fa-hands-helping {
   background-color: #ae80e5;
   background-blend-mode: lighten;
   box-shadow: 4px 4px 6px #000;
-}
-
-@font-face {
-  font-family: "Shrikhand";
-  src: url(Shrikhand/Shrikhand-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Roboto";
-  src: url(Roboto/Roboto-Regular.ttf) format("truetype");
 }

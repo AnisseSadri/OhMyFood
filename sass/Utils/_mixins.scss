@@ -19,10 +19,10 @@
 }
 
 @mixin btn-about {
-  background-image: $linear-gradient;
+  background: $linear-gradient;
   border: 1px solid transparent;
   border-radius: 30px;
-  padding: 10px 5px;
+  padding: 15px 25px;
   color: #fff;
   font-weight: bold;
   box-shadow: 4px 4px 6px #aaa;
@@ -77,27 +77,6 @@
   margin-top: -50px;
 }
 
-@mixin cross {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $color-tertiary;
-  width: 20px;
-  height: 30px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  position: absolute;
-  padding: 20px;
-  right: -50px;
-  top: 0;
-  opacity: 0;
-  transition: transform 330ms ease-in-out;
-  & .fa-check-circle {
-    color: #fff;
-    transition: transform 500ms ease-in-out;
-  }
-}
-
 @mixin menu-header {
   display: flex;
   justify-content: space-around;
@@ -112,7 +91,7 @@
   margin-top: -50px;
 }
 @mixin menu-title {
-  font-family: Shrikhand, sans-serif;
+  font-family: "Shrikhand", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -134,10 +113,31 @@
     padding-right: 75px;
   }
   &:hover .cross {
+    right: -50px;
     opacity: 1;
     transform: translate(-50px);
   }
   &:hover .fa-check-circle {
     transform: rotate(360deg);
+  }
+}
+
+@mixin cross {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-tertiary;
+  width: 20px;
+  height: 23px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  padding: 20px;
+  right: -60px;
+  top: 0;
+  transition: transform 330ms ease-in-out;
+  & .fa-check-circle {
+    color: #fff;
+    transition: transform 500ms ease-in-out;
   }
 }

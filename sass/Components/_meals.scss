@@ -1,20 +1,47 @@
 .starter {
-  animation: fadein 3s ease-in-out;
   @include desktop {
     width: 400px;
+  }
+  &__1 {
+    animation: fadein 200ms;
+  }
+  &__2 {
+    animation: fadein 1200ms;
+  }
+  &__3 {
+    animation: fadein 2200ms;
+  }
+  &__4 {
+    animation: fadein 2700ms;
   }
 }
 
 .dish {
-  animation: fadein 6s ease-in-out;
   @include desktop {
     width: 400px;
   }
+  &__1 {
+    animation: fadein 3200ms;
+  }
+  &__2 {
+    animation: fadein 4200ms;
+  }
+  &__3 {
+    animation: fadein 5200ms;
+  }
 }
 .dessert {
-  animation: fadein 9s ease-in-out;
   @include desktop {
     width: 400px;
+  }
+  &__1 {
+    animation: fadein 6200ms;
+  }
+  &__2 {
+    animation: fadein 7200ms;
+  }
+  &__3 {
+    animation: fadein 8200ms;
   }
 }
 .cross {
@@ -33,20 +60,22 @@
   justify-content: space-between;
   align-items: center;
   line-height: 1.5em;
-}
-.last__line p {
-  margin: 0;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  @include desktop {
-    padding-right: 20px;
+  & p {
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    @include desktop {
+      padding-right: 20px;
+    }
+  }
+  & span {
+    margin-right: 5px;
   }
 }
-.last__line span {
-  margin-right: 5px;
-}
 .meals h4 {
+  text-overflow: ellipsis;
+  overflow: hidden;
   margin: 0;
 }
 .starter h3,

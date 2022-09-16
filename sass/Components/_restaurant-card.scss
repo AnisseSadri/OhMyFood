@@ -21,13 +21,14 @@
 .main__restaurant {
   display: flex;
   flex-direction: column;
+  margin: 10px;
   @include tablet {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-flow: row wrap;
   }
   @include desktop {
-    padding: 0 20%;
+    padding: 0;
   }
 }
 
@@ -41,7 +42,7 @@
   }
   span {
     :hover {
-      background-color: $linear-gradient;
+      background: $linear-gradient;
     }
   }
 }
