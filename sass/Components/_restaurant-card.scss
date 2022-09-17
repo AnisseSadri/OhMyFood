@@ -40,11 +40,6 @@
     margin: 0;
     font-size: 1.5rem;
   }
-  span {
-    :hover {
-      background: $linear-gradient;
-    }
-  }
 }
 
 .new {
@@ -54,10 +49,14 @@
 .fill {
   color: black;
   cursor: pointer;
+  border: black 1px;
   &:hover {
     animation: fill 0.3s ease-in-out;
+    -webkit-animation: fill 0.3s ease-in-out;
     display: inline-block;
+    -webkit-display: inline-block;
     opacity: 1;
+    -webkit-opacity: 1;
     background: linear-gradient(
       to left,
       #9356dc,
@@ -76,7 +75,7 @@
     );
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
     font-weight: bold;
   }
 }
