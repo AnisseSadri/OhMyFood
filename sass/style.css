@@ -626,7 +626,7 @@ footer .fa-hands-helping {
   padding: 20px;
   right: -60px;
   top: 0;
-  transition: transform 330ms ease-in-out;
+  transition: transform 500ms ease-in-out;
 }
 .cross .fa-check-circle {
   color: #fff;
