@@ -191,6 +191,7 @@ header img {
   text-align: center;
   width: 100%;
   padding: 40px 0;
+  margin-bottom: 20px;
 }
 
 .loader {
@@ -300,14 +301,15 @@ footer {
   width: 150px;
 }
 
-.about {
-  margin-bottom: 20px;
-}
 .about h2 {
   font-weight: bolder;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .about p {
   color: #4d4d4d;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .btn__about button {
